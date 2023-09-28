@@ -1,1 +1,54 @@
- 
+/* Asked chatgpt to apply Lightning McQueen theme we will see how it goes */
+body {
+    background: url('mcqueen.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: red;
+    padding: 20px;
+}
+
+h1 {
+    color: yellow;
+}
+
+div {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the search box and buttons */
+label {
+    color: yellow;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+input[type="button"] {
+    background-color: red;
+    color: yellow;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Hide searchResults and time divs initially */
+#searchResults, #time {
+    display: none;
+}

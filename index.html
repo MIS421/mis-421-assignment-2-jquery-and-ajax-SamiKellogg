@@ -3,14 +3,38 @@
 <html lang="en">
 
 <head>
-
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami's Creative Search Engine</title>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
 
-  <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/eggplant/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
+    <header>
+        <h1>Welcome to Sami's Creative Search Engine</h1>
+    </header>
+    <div>
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="query">
+        <input type="button" value="Search">
+        <input type="button" value="Display Time" onclick="displayTime()">
+    </div>
+
+    <div id="searchResults"></div>
+    <div id="time"></div>
+    <script>
+        function displayTime() {
+            const currentTime = new Date();
+            const timeElement = document.getElementById('time');
+            timeElement.textContent = 'Current Time: ' + currentTime.toLocaleTimeString();
+        }
+    </script>
 
 </body>
 
